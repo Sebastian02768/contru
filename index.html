@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Construcciones Profesionales</title>
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+	<header class="site-header">
+		<div class="brand">🏗️ BuildCorp</div>
+		<nav class="nav-links">
+			<a href="#inicio">Inicio</a>
+			<a href="#servicios">Servicios</a>
+			<a href="#proyectos">Proyectos</a>
+			<a href="#contacto">Contacto</a>
+		</nav>
+		<button class="menu-toggle" id="menuToggle">Menu</button>
+	</header>
+
+	<section id="inicio" class="hero">
+		<div class="hero-text">
+			<h1>Construcción de Calidad</h1>
+			<p>Realizamos proyectos residenciales, comerciales e industriales con excelencia y profesionalismo.</p>
+			<a class="btn" href="#proyectos">Ver proyectos</a>
+		</div>
+	</section>
+
+	<section id="servicios" class="section">
+		<h2>Nuestros Servicios</h2>
+		<div class="carousel-container">
+			<button class="carousel-btn prev" id="prevBtn">❮</button>
+			<div class="carousel">
+				<div class="cards" id="cardsContainer">
+					<div class="card">
+						<h3>🏘️ Residencial</h3>
+						<p>Construcción de casas, apartamentos y complejos habitacionales con acabados premium.</p>
+					</div>
+					<div class="card">
+						<h3>🏢 Comercial</h3>
+						<p>Edificios comerciales, locales y centros empresariales con diseño moderno.</p>
+					</div>
+					<div class="card">
+						<h3>🏭 Industrial</h3>
+						<p>Galpones, plantas industriales y estructuras metálicas de gran envergadura.</p>
+					</div>
+					<div class="card">
+						<h3>🔧 Reformas</h3>
+						<p>Remodelaciones y ampliaciones con materiales de primera calidad.</p>
+					</div>
+				</div>
+			</div>
+			<button class="carousel-btn next" id="nextBtn">❯</button>
+		</div>
+	</section>
+
+	<section id="proyectos" class="section gallery-section">
+		<h2>Proyectos Realizados</h2>
+		<p class="section-description">Descubre algunos de nuestros trabajos más destacados en obra nueva, reformas y construcciones industriales. Cada proyecto está diseñado para entregar calidad, seguridad y estética.</p>
+		<div class="gallery-grid">
+			<article class="project-card" style="background-image: url('images/proyecto1.jpg');">
+				<div class="project-meta">
+					<span>Residencial</span>
+					<h3>Vivienda moderna</h3>
+					<p>Casa familiar con acabados de alto nivel y distribución eficiente.</p>
+				</div>
+			</article>
+			<article class="project-card" style="background-image: url('images/proyecto2.jpg');">
+				<div class="project-meta">
+					<span>Comercial</span>
+					<h3>Local corporativo</h3>
+					<p>Espacio comercial con fachada atractiva y acabado premium.</p>
+				</div>
+			</article>
+			<article class="project-card" style="background-image: url('images/proyecto3.jpg');">
+				<div class="project-meta">
+					<span>Industrial</span>
+					<h3>Nave industrial</h3>
+					<p>Proyecto de gran escala con estructura resistente y funcional.</p>
+				</div>
+			</article>
+			<article class="project-card" style="background-image: url('images/proyecto4.jpg');">
+				<div class="project-meta">
+					<span>Reformas</span>
+					<h3>Renovación completa</h3>
+					<p>Intervención integral para espacios más modernos y cómodos.</p>
+				</div>
+			</article>
+		</div>
+	</section>
+
+	<section id="contacto" class="section contact-section">
+		<h2>Solicita un Presupuesto</h2>
+		<form id="contactForm">
+			<label>Nombre Completo
+				<input type="text" name="nombre" placeholder="Tu nombre" required />
+			</label>
+			<label>Email
+				<input type="email" name="email" placeholder="tu@correo.com" required />
+			</label>
+			<label>Teléfono
+				<input type="tel" name="telefono" placeholder="+34 612 345 678" />
+			</label>
+			<label>Tipo de Proyecto
+				<select name="tipo" required>
+					<option>Selecciona un tipo</option>
+					<option>Residencial</option>
+					<option>Comercial</option>
+					<option>Industrial</option>
+					<option>Reforma</option>
+				</select>
+			</label>
+			<label>Descripción del Proyecto
+				<textarea name="mensaje" rows="4" placeholder="Cuéntanos sobre tu proyecto"></textarea>
+			</label>
+			<button type="submit" class="btn">Enviar Solicitud</button>
+		</form>
+	</section>
+
+	<footer class="footer">
+		<p>© 2026 BuildCorp</p>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
