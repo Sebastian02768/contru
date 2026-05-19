@@ -17,17 +17,19 @@ contactForm.addEventListener('submit', (event) => {
 	contactForm.reset();
 });
 
-prevBtn.addEventListener('click', () => {
-	const maxIndex = cardsContainer.children.length - 1;
-	currentIndex = currentIndex === 0 ? maxIndex : currentIndex - 1;
-	updateCarousel();
-});
+if (prevBtn && nextBtn && cardsContainer) {
+	prevBtn.addEventListener('click', () => {
+		const maxIndex = cardsContainer.children.length - 1;
+		currentIndex = currentIndex === 0 ? maxIndex : currentIndex - 1;
+		updateCarousel();
+	});
 
-nextBtn.addEventListener('click', () => {
-	const maxIndex = cardsContainer.children.length - 1;
-	currentIndex = currentIndex === maxIndex ? 0 : currentIndex + 1;
-	updateCarousel();
-});
+	nextBtn.addEventListener('click', () => {
+		const maxIndex = cardsContainer.children.length - 1;
+		currentIndex = currentIndex === maxIndex ? 0 : currentIndex + 1;
+		updateCarousel();
+	});
+}
 
 function updateCarousel() {
 	const offset = -(currentIndex * 100);
