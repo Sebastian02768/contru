@@ -325,11 +325,16 @@ body {
 	.carousel-container {
 		flex-direction: column;
 		justify-content: center;
+		align-items: stretch;
 		gap: 1rem;
+	}
+	.carousel {
+		width: 100%;
 	}
 	.carousel-btn {
 		width: 48px;
 		height: 48px;
+		align-self: center;
 	}
 	.card {
 		padding: 2rem 1.8rem;
