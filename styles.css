@@ -207,18 +207,28 @@ body {
 .service-highlights {
 	display: grid;
 	grid-template-columns: repeat(3, minmax(0, 1fr));
-	gap: 0.75rem;
-	margin-top: 1.5rem;
+	gap: 1rem;
+	margin-top: 1.75rem;
 }
 
 .service-highlights span {
-	display: block;
-	padding: 0.95rem 1rem;
-	background: rgba(234, 88, 12, 0.08);
-	border-radius: 999px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem 1.2rem;
+	background: rgba(234, 88, 12, 0.1);
+	border: 1px solid rgba(234, 88, 12, 0.18);
+	border-radius: 18px;
 	font-size: 0.95rem;
 	color: var(--text);
 	text-align: center;
+	transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+}
+
+.service-highlights span:hover {
+	background: rgba(234, 88, 12, 0.16);
+	border-color: rgba(234, 88, 12, 0.24);
+	transform: translateY(-2px);
 }
 
 .service-grid {
